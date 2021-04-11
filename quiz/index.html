@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Quiz</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="home-box custom-box">
+        <h3>Thi sát hạch lý thuyết lái xe online</h3>
+        <p>Dựa trên tài liệu luyện thi lý thuyết lái xe của Tổng Cục Đường Bộ Việt Nam. <br>Đề thi bao gồm : <span class="total-question"> 5 </span>câu. 
+            <br>Bạn phải đạt 60% mới vượt qua kỳ thi.
+            <br>CHÚC BẠN MAY MẮN, NÀO HÃY BẮT ĐẦU THI THÔI !</p>
+        <button type="button" class="btn" onclick="startQuiz()">Bắt Đầu Thi</button>
+    </div>
+
+    <div class="quiz-box custom-box hide">
+        <div class="question-number">
+           
+        </div>
+        <div class="question-text">
+           
+        </div>
+        <div class="option-container">
+            
+        </div>
+        <div class="next-question-btn">
+            <button type="button" class="btn" onclick="next()">Next</button>
+        </div>
+        <div class="answear-indicator">
+             
+        </div>
+    </div>
+
+    <div class="result-box custom-box hide ">
+        <h1>Kết Quả Thi Sát Hạch Lý Thuyết Lái Xe</h1>
+        <table>
+            <tr>
+                <td>Tổng Số Câu Hỏi</td>
+                <td><span class="total-question"> </span></td>
+            </tr>
+            <tr>
+                <td>Attempt</td>
+                <td><span class="total-attempt"> </span></td>
+            </tr>
+            <tr>
+                <td>Số Câu Đúng</td>
+                <td><span class="total-correct"> </span></td>
+            </tr>
+            <tr>
+                <td>Số câu Sai</td>
+                <td><span class="total-wrong"> </span></td>
+            </tr>
+            <tr>
+                <td>Tỷ Lệ Phần Trăm</td>
+                <td><span class="percentage"> </span></td>
+            </tr>
+            <tr>
+                <td>Điểm Của Bạn</td>
+                <td><span class="total-score"> </span></td>
+            </tr>
+        </table>
+        <button type="button" class="btn" onclick="tryAgainQuiz()">Thử Lại</button>
+        <button type="button" class="btn" onclick="goToHome()">Quay Lại Trang Chủ</button>
+    </div>
+    <script src="./question.js"></script>
+    <script src="./app.js"></script> 
+</body> 
+</html>
